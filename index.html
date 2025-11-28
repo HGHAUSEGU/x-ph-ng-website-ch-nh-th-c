@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOAP Handmade — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1522337360788-8b13dee7a37c?auto=format&fit=crop&w=1000&q=60">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    header {
+      animation: fadeIn 0.8s ease-in;
+    }
+    
+    h1, h2, h3 {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+    
+    h1 {
+      animation-delay: 0.2s;
+    }
+    
+    h2 {
+      animation-delay: 0.3s;
+    }
+    
+    h3 {
+      animation-delay: 0.2s;
+    }
+    
+    p {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.4s;
+    }
+    
+    section {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.5s;
+    }
+    
+    .fade-in-btn {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.6s;
+    }
+    
+    img {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.3s;
+    }
+  </style>
+</head>
+<body class="text-white" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=80'); background-attachment: fixed; background-size: cover; background-position: center;">
+  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(22, 101, 22, 0.8) 0%, rgba(34, 87, 34, 0.87) 50%, rgba(40, 75, 30, 0.92) 100%); pointer-events: none; z-index: 0;"></div>
+  <div style="position: relative; z-index: 1;">
+  <header class="max-w-6xl mx-auto p-6 flex flex-col items-center justify-center" width= "100%" height = "100%" >
+    <div class="flex items-center gap-4 mb-4">
+      <div  width= "100%" height = "100%">
+        <img src="588702992_26205758885690678_6762401456698496521_n.jpg" alt="Logo" class="w-20 h-20 rounded-full object-cover" width="80" height="80" fetchpriority="high" decoding="async"/>
+      </div>
+      <div>
+        <h1 class="text-xl font-bold text-white">SOAP Handmade</h1>
+        <p class="text-xs text-gray-200">Tự nhiên • Thủ công • Bền vững</p>
+      </div>
+    </div>
+    <nav class="flex gap-6 text-sm justify-center">
+      <a href="#about" class="text-white hover:text-gray-200 hover:underline">Giới thiệu</a>
+      <a href="#products" class="text-white hover:text-gray-200 hover:underline">Sản phẩm</a>
+      <a href="#process" class="text-white hover:text-gray-200 hover:underline">Quy trình</a>
+      <a href="#contact" class="text-white hover:text-gray-200 hover:underline">Liên hệ</a>
+    
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-16">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-8">
+      <div>
+        <h2 class="text-4xl font-extrabold leading-tight text-white">Xà phòng thủ công được làm từ tình yêu môi trường và sự quan tâm đến sức khỏe</h2>
+        <p class="mt-4 text-gray-100">Nhóm "Đắng" chúng em với sứ mệnh là sử dụng những nguyên liệu có nguồn gốc từ thiên nhiên để tạo nên những mẻ xà phòng thật chất lượng, thân thiện với thiên nhiên</p>
+        <p class="text-gray-100"><b>Vì một môi trường xanh bền vững và sức khỏe của mọi gia đình </b> </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#products" class="px-5 py-3 bg-green-700 hover:bg-green-800 text-white rounded-lg shadow-lg font-semibold fade-in-btn">Xem sản phẩm</a>
+          <a href="#contact" class="px-5 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-green-800 transition fade-in-btn">Liên hệ</a>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <img src="02eac6ba9933c53cb7b36fb95e61b567.jpg" class="w-full  " alt="Xà phòng thủ công" width="1000" height="450" fetchpriority="high" decoding="async" />
+      </div>
+    </section>
+
+    <section id="about" class="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/30">
+      <h3 class="text-2xl font-bold text-white">Về SOAP Handmade</h3>
+      <p class="mt-3 text-gray-100">Dự án được tạo ra với mong muốn mang đến những sản phẩm chăm sóc da an toàn, tự nhiên và thân thiện với môi trường cho mỗi gia đình. Xà phòng được làm từ khổ qua, hương liệu thiên nhiên và tinh dầu lavender – sự kết hợp mang lại cảm giác thư giãn, thanh lọc và nuôi dưỡng làn da mỗi ngày.
+
+Chúng tôi hướng đến một lối sống xanh – sạch – lành mạnh, sử dụng nguyên liệu gần gũi và tận dụng dầu mỡ thừa tái chế, góp phần giảm rác thải và bảo vệ môi trường.
+
+Mỗi bánh xà phòng không chỉ là sản phẩm chăm sóc da, mà còn là lời nhắc về một phong cách sống bền vững, yêu thương bản thân và hành tinh này.</p>
+    </section>
+
+    <section id="products" class="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/30">
+      <h3 class="text-2xl font-bold text-white">Sản phẩm nổi bật</h3>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow overflow-hidden transform transition-transform duration-200 hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+          <img src="z7271679042331_7516354dc411b5f3e3418987f0c1e932.jpg" alt="Xà phòng khổ qua" loading="lazy"  width="400" height="300" decoding="async" />
+          <div class="p-4">
+            <h4 class="font-semibold"> Xà phòng hương khổ qua</h4>
+            <p class="text-sm text-gray-500 mt-2">Hương khổ qua kết hợp tinh dầu lavender tạo cảm giác thư giãn, sạch sẽ cho da tay</p>
+          </div>
+        </div>
+       
+        
+        <div class="bg-white rounded-lg shadow overflow-hidden transform transition-transform duration-200 hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+          <img src="z7271679037510_4194117967a7e5a78c14030cc81ff44b.jpg" alt="Xà phòng Orange calm" loading="lazy"  width="400" height="300" decoding="async" />
+          <div class="p-4">
+            <h4 class="font-semibold">Khổ qua (Orange calm)</h4>
+            <p class="text-sm text-gray-500 mt-2">Xà phòng hương vị khổ qua với tinh dầu cam tạo nên mùi hương dịu ngọt, dễ chịu</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden transform transition-transform duration-200 hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+          <img src="z7272001594047_875d3e089987b789dd1bb5ecd3c52664.jpg" alt="Xà phòng mẫu" loading="lazy"  width="400" height="300" decoding="async" />
+          <div class="p-4">
+            <h4 class="font-semibold">Khổ qua (Orange calm)</h4>
+            <p class="text-sm text-gray-500 mt-2">Xà phòng hương vị khổ qua với tinh dầu cam tạo nên mùi hương dịu ngọt, dễ chịu</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/30">
+      <h3 class="text-2xl font-bold text-white">Quy trình của chúng tôi</h3>
+      <p class="mt-3 text-gray-100">Chúng tôi sử dụng phương pháp cold process để giữ trọn lợi ích tự nhiên của các thành phần.</p>
+      <ol class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm" >
+        <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700"> Bước 1
+  <p> -Pha dung dịch NaOH</p>
+<p>-Đeo bảo hộ đầy đủ.</p>
+<p>-Cân NaOH, cho từ từ vào nước cất và khuấy tan.</p>
+<p>-Để dung dịch nguội xuống khoảng 38 đến 43°C.</p></li>
+        <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700">
+<p>Bước 2 </p>
+  <ul><p>-Chuẩn bị dầu</p>
+ <p>-Cân và trộn các loại dầu.</p>
+<p>-Đun nhẹ cho dầu đặc tan chảy, để nguội về khoảng 38–43°C</p></ul>
+
+        </li>
+        <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700">
+
+<p>Bước 3 </p>
+<p>-Trộn kiềm và dầu</p>
+<p>-Khi hai hỗn hợp cùng nhiệt độ, đổ dung dịch NaOH vào dầu.</p>
+<p>-Dùng máy trộn đến khi đạt độ sệt ("trace").</p>
+        </li>
+
+        <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700">
+<p>Bước 4 </p>
+<p>-Thêm màu, hương và lá khô</p>
+<p>-Thêm màu, tinh dầu và trộn đều.</p>
+<p>-Cho lá khô vào khuôn hoặc rắc lên mặt.</p> 
+
+
+        </li>
+      <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700">
+<p>Bước 5 </p>
+<p>-Đổ khuôn và ủ</p>
+<p>-Đổ vào khuôn, bọc kín và ủ 24–48 giờ</p> 
+<p>-Lấy ra và bọc vào bao bì</p>
+
+        </li>
+        <li class="bg-green-900/80 text-white p-4 rounded shadow-sm border border-green-700">
+<p>Bước 6 </p>
+<p>-Giai đoạn dưỡng (curing)</p>
+<p>-Để nơi khô thoáng ít nhất 4 tuần để xà phòng hoàn thiện và an toàn sử dụng.</p>
+
+
+
+        </li>
+      </ol>
+    </section>
+
+    <section class="mt-8 flex items-center justify-center">
+      <div class="max-w-3xl text-center bg-black/30 backdrop-blur-sm p-6 rounded-lg border border-green-700/20">
+        <p class="text-lg text-gray-100 font-semibold">Bạn có đang lo lắng về mức độ an toàn của sản phẩm?</p>
+        <a href="product.html" class="inline-block mt-4 px-6 py-3 bg-white text-green-800 font-semibold rounded-lg shadow hover:opacity-95 transition">Nhấp vào đây để tìm hiểu thêm</a>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/30">
+      <h3 class="text-2xl font-bold text-white">Liên hệ</h3>
+      <p class="text-gray-100 mt-2">Để đặt workshop hoặc hợp tác:</p>
+      <div class="mt-4 text-sm text-gray-100">
+        <p><strong>Email:</strong> huynhgiahuy13112008@gmail.com</p>
+        <p class="mt-2"><strong>Instagram:</strong> @soaphandmade</p>
+        <p> <strong>  Facebook Page của nhóm</strong></p> <p><a href="https://www.facebook.com/profile.php?id=61584265836799"> Nhấp tại đây</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-green-900/80 border-t border-green-700 mt-12">
+    <div class="max-w-6xl mx-auto p-6 text-center text-sm text-gray-100">
+      © SOAP Handmade — Danh mục Xà phòng Tự nhiên
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
